@@ -10,14 +10,15 @@ TDB
 
 # Roadmap
 
-[x] Implement JSON RPC API non-experemental methods
-[x] Provide documentation
-[] Publish nuget package to Nuget.org
-[] Implement JSON RPC API experemental RPC methods
-[] Implement REST methods
+[x] Implement JSON RPC API non-experemental methods<br />
+[x] Provide documentation<br />
+[] Publish nuget package to Nuget.org<br />
+[] Implement JSON RPC API experemental RPC methods<br />
+[] Implement REST methods<br />
 
 # Example
 
+TDB
 
 # Contribution
 
