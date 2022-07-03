@@ -6,7 +6,7 @@
 
         <IsPackable>false</IsPackable>
 
-        <RootNamespace>BlockMetrics.NearRPC.Tests</RootNamespace>
+        <RootNamespace>DotnetNearSdk.NearRPC.Tests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
