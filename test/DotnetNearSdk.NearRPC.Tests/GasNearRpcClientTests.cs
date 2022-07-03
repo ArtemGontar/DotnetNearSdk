@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using DotnetNearSdk.NearRPC.Interfaces;
+using DotnetNearSdk.NearRPC.Types;
 using Xunit;
 
 namespace DotnetNearSdk.NearRPC.Tests;
@@ -10,12 +11,10 @@ public class GasNearRpcClientTests
 
     public GasNearRpcClientTests()
     {
-        _nearRpcClient = new NearRpcClient("https://rpc.testnet.near.org");
+        _nearRpcClient = new NearRpcClient(Cluster.TestNet);
     }
     
     [Fact]
-    // [InlineData("A5uBC3AXhAhYpMfVUDU48BmU86NHvW57YnJtCXvTGhEK")]
-    // [InlineData(93373159)]
     public async Task GetGasPriceAsync_ShouldReturnValidResponse()
     {
         //arrange
@@ -29,7 +28,26 @@ public class GasNearRpcClientTests
         
         //assert
         Assert.NotNull(result);
+        Assert.Null(result.Error);
         Assert.NotNull(result.Result);
         Assert.NotEmpty(result.Result.GasPrice);
+    }
+    
+    [Fact]
+    public async Task GetGasPriceAsync_ShouldReturnErrorResponse()
+    {
+        //arrange
+        var parameters = new int[]
+        {
+            93
+        };
+        
+        //act
+        var result = await _nearRpcClient.GetGasPriceAsync(parameters);
+        
+        //assert
+        Assert.NotNull(result);
+        Assert.Null(result.Result);
+        Assert.NotNull(result.Error);
     }
 }

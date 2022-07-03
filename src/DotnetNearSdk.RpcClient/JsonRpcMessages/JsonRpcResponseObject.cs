@@ -21,4 +21,7 @@ public class JsonRpcResponseObject<T> where T : class
     /// </summary>
     [JsonPropertyName("result")]
     public T Result { get; set; }
+
+    [JsonPropertyName("error")]
+    public RpcError Error { get; set; }
 }

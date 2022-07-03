@@ -10,5 +10,5 @@ public interface IGasNearRpcClient
     /// </summary>
     /// <param name="parameters">[block_height], ["block_hash"], or [null]</param>
     /// <returns></returns>
-    public Task<JsonRpcResponseObject<GetGasPriceResult>> GetGasPriceAsync(params object[] parameters);
+    public Task<JsonRpcResponseObject<GetGasPriceResult>> GetGasPriceAsync(object parameters = null);
 }

@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using DotnetNearSdk.NearRPC.Interfaces;
+using DotnetNearSdk.NearRPC.Types;
 using Xunit;
 
 namespace DotnetNearSdk.NearRPC.Tests;
@@ -10,7 +11,7 @@ public class AccountsContactsNearRpcClientTests
 
     public AccountsContactsNearRpcClientTests()
     {
-        _nearRpcClient = new NearRpcClient("https://rpc.testnet.near.org");
+        _nearRpcClient = new NearRpcClient(Cluster.TestNet);
     }
     
     [Fact]
@@ -35,6 +36,23 @@ public class AccountsContactsNearRpcClientTests
     }
     
     [Fact]
+    public async Task ViewAccountAsync_ShouldReturnErrorResponse()
+    {
+        //arrange
+        var parameters = new
+        {
+        };
+        
+        //act
+        var result = await _nearRpcClient.ViewAccountAsync(parameters);
+        
+        //assert
+        Assert.NotNull(result);
+        Assert.Null(result.Result);
+        Assert.NotNull(result.Error);
+    }
+    
+    [Fact]
     public async Task ViewAccountChangesAsync_ShouldReturnValidResponse()
     {
         //arrange
@@ -52,6 +70,23 @@ public class AccountsContactsNearRpcClientTests
         Assert.NotNull(result);
         Assert.NotNull(result.Result);
         Assert.NotEmpty(result.Result.BlockHash);
+    }
+    
+    [Fact]
+    public async Task ViewAccountChangesAsync_ShouldReturnErrorResponse()
+    {
+        //arrange
+        var parameters = new
+        {
+        };
+        
+        //act
+        var result = await _nearRpcClient.ViewAccountChangesAsync(parameters);
+        
+        //assert
+        Assert.NotNull(result);
+        Assert.Null(result.Result);
+        Assert.NotNull(result.Error);
     }
     
     [Fact]
@@ -76,6 +111,23 @@ public class AccountsContactsNearRpcClientTests
     }
     
     [Fact]
+    public async Task ViewContractCodeAsync_ShouldReturnErrorResponse()
+    {
+        //arrange
+        var parameters = new
+        {
+        };
+        
+        //act
+        var result = await _nearRpcClient.ViewContractCodeAsync(parameters);
+        
+        //assert
+        Assert.NotNull(result);
+        Assert.Null(result.Result);
+        Assert.NotNull(result.Error);
+    }
+    
+    [Fact]
     public async Task ViewContractStateAsync_ShouldReturnValidResponse()
     {
         //arrange
@@ -94,5 +146,22 @@ public class AccountsContactsNearRpcClientTests
         Assert.NotNull(result);
         Assert.NotNull(result.Result);
         Assert.NotEmpty(result.Result.BlockHash);
+    }
+    
+    [Fact]
+    public async Task ViewContractStateAsync_ShouldReturnErrorResponse()
+    {
+        //arrange
+        var parameters = new
+        {
+        };
+        
+        //act
+        var result = await _nearRpcClient.ViewContractStateAsync(parameters);
+        
+        //assert
+        Assert.NotNull(result);
+        Assert.Null(result.Result);
+        Assert.NotNull(result.Error);
     }
 }

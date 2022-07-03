@@ -1,0 +1,24 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=479f7a40_002Da72a_002D43dc_002D978b_002Dedfb9e9e51a3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetNodeStatusAsync_ShouldReturnValidResponse #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;xUnit::20F44B89-C0CB-4B9B-9743-D6C69C3BB6AF::net6.0::DotnetNearSdk.NearRPC.Tests.ProtocolNearRpcClientTests.GetNodeStatusAsync_ShouldReturnValidResponse&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::20F44B89-C0CB-4B9B-9743-D6C69C3BB6AF::net6.0::DotnetNearSdk.NearRPC.Tests.NetworkNearRpcClientTests.GetValidationStatusAsync_ShouldReturnErrorResponse&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::20F44B89-C0CB-4B9B-9743-D6C69C3BB6AF::net6.0::DotnetNearSdk.NearRPC.Tests.GasNearRpcClientTests.GetGasPriceAsync_ShouldReturnErrorResponse&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::20F44B89-C0CB-4B9B-9743-D6C69C3BB6AF::net6.0::DotnetNearSdk.NearRPC.Tests.GasNearRpcClientTests.GetGasPriceAsync_ShouldReturnValidResponse&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::20F44B89-C0CB-4B9B-9743-D6C69C3BB6AF::net6.0::DotnetNearSdk.NearRPC.Tests.BlockNearRpcClientTests&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+    &lt;ProjectFile&gt;20F44B89-C0CB-4B9B-9743-D6C69C3BB6AF/f:AccessKeysNearRpcClientTests.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;20F44B89-C0CB-4B9B-9743-D6C69C3BB6AF/f:AccountsContactsNearRpcClientTests.cs&lt;/ProjectFile&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5c222188_002D1fab_002D4572_002Db749_002D70a032264343/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetNodeStatusAsync_ShouldReturnValidResponse" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::20F44B89-C0CB-4B9B-9743-D6C69C3BB6AF::net6.0::DotnetNearSdk.NearRPC.Tests.ProtocolNearRpcClientTests.GetNodeStatusAsync_ShouldReturnValidResponse&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e497e0cb_002Dfacd_002D452c_002Db5c3_002Dd14b4b360048/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetNodeStatusAsync_ShouldReturnValidResponse #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::20F44B89-C0CB-4B9B-9743-D6C69C3BB6AF::net6.0::DotnetNearSdk.NearRPC.Tests.ProtocolNearRpcClientTests.GetNodeStatusAsync_ShouldReturnValidResponse&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

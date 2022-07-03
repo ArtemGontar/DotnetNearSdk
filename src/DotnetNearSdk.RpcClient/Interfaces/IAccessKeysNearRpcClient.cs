@@ -11,14 +11,14 @@ public interface IAccessKeysNearRpcClient
     /// </summary>
     /// <param name="parameters">request_type: view_access_key, finality OR block_id, account_id: "example.testnet", public_key: "example.testnet's public key"</param>
     /// <returns></returns>
-    public Task<JsonRpcResponseObject<ViewAccessKeyResult>> ViewAccessKeyAsync(params object[] parameters);
+    public Task<JsonRpcResponseObject<ViewAccessKeyResult>> ViewAccessKeyAsync(object parameters = null);
 
     /// <summary>
     /// Returns ALL access keys for a given account. (query).
     /// </summary>
     /// <param name="parameters">request_type: view_account, finality OR block_id,account_id: "example.testnet"</param>
     /// <returns></returns>
-    public Task<JsonRpcResponseObject<ViewAccessKeyListResult>> ViewAccessKeyListAsync(params object[] parameters);
+    public Task<JsonRpcResponseObject<ViewAccessKeyListResult>> ViewAccessKeyListAsync(object parameters = null);
 
     
     /// <summary>
@@ -26,6 +26,6 @@ public interface IAccessKeysNearRpcClient
     /// </summary>
     /// <param name="parameters">changes_type: single_access_key_changes OR all_access_key_changes, keys: [{ account_id, public_key }] OR account_ids: [ "example.testnet", "example2.testnet"], finality OR block_id</param>
     /// <returns></returns>
-    public Task<JsonRpcResponseObject<ViewAccessKeyChangesResult>> ViewAccessKeyChangesAsync(params object[] parameters);
+    public Task<JsonRpcResponseObject<ViewAccessKeyChangesResult>> ViewAccessKeyChangesAsync(object parameters = null);
 
 }

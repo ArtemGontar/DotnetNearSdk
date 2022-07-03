@@ -36,6 +36,23 @@ public class AccessKeysNearRpcClientTests
     }
     
     [Fact]
+    public async Task ViewAccessKeyAsync_ShouldReturnErrorResponse()
+    {
+        //arrange
+        var parameters = new
+        {
+        };
+        
+        //act
+        var result = await _nearRpcClient.ViewAccessKeyAsync(parameters);
+        
+        //assert
+        Assert.NotNull(result);
+        Assert.Null(result.Result);
+        Assert.NotNull(result.Error);
+    }
+    
+    [Fact]
     public async Task ViewAccessKeyListAsync_ShouldReturnValidResponse()
     {
         //arrange
@@ -54,6 +71,23 @@ public class AccessKeysNearRpcClientTests
         Assert.NotNull(result.Result);
         Assert.NotNull(result.Result.Keys);
         Assert.NotEmpty(result.Result.BlockHash);
+    }
+    
+    [Fact]
+    public async Task ViewAccessKeyListAsync_ShouldReturnErrorResponse()
+    {
+        //arrange
+        var parameters = new
+        {
+        };
+        
+        //act
+        var result = await _nearRpcClient.ViewAccessKeyListAsync(parameters);
+        
+        //assert
+        Assert.NotNull(result);
+        Assert.Null(result.Result);
+        Assert.NotNull(result.Error);
     }
     
     [Fact]
@@ -83,7 +117,7 @@ public class AccessKeysNearRpcClientTests
         Assert.NotNull(result.Result.Changes);
         Assert.NotEmpty(result.Result.BlockHash);
     }
-    
+
     [Fact]
     public async Task ViewAccessKeyChangesAsync_AllMode_ShouldReturnValidResponse()
     {
@@ -107,5 +141,23 @@ public class AccessKeysNearRpcClientTests
         Assert.NotNull(result.Result);
         Assert.NotNull(result.Result.Changes);
         Assert.NotEmpty(result.Result.BlockHash);
+    }
+    
+        
+    [Fact]
+    public async Task ViewAccessKeyChangesAsync_ShouldReturnErrorResponse()
+    {
+        //arrange
+        var parameters = new
+        {
+        };
+        
+        //act
+        var result = await _nearRpcClient.ViewAccessKeyChangesAsync(parameters);
+        
+        //assert
+        Assert.NotNull(result);
+        Assert.Null(result.Result);
+        Assert.NotNull(result.Error);
     }
 }

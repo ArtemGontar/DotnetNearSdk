@@ -9,6 +9,7 @@ public interface INearRpcClient :
     ITransactionNearRpcClient, 
     IBlockNearRpcClient, 
     IAccountsContractsRpcClient,
-    IAccessKeysNearRpcClient
+    IAccessKeysNearRpcClient,
+    IProtocolNearRpcClient
 {
 }

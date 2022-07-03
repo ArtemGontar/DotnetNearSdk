@@ -11,19 +11,19 @@ public interface IBlockNearRpcClient
     /// </summary>
     /// <param name="parameters">finality OR block_id OR block_hash</param>
     /// <returns></returns>
-    public Task<JsonRpcResponseObject<GetBlockDetailsResult>> GetBlockDetailsAsync(params object[] parameters);
+    public Task<JsonRpcResponseObject<GetBlockDetailsResult>> GetBlockDetailsAsync(object parameters = null);
     
     /// <summary>
     /// Returns changes in block for given block height or hash. You can also use finality param to return latest block details (EXPERIMENTAL_changes_in_block).
     /// </summary>
     /// <param name="parameters">finality OR block_id OR block_hash</param>
     /// <returns></returns>
-    public Task<JsonRpcResponseObject<GetChangesInBlockResult>> GetChangesInBlockAsync(params object[] parameters);
+    public Task<JsonRpcResponseObject<GetChangesInBlockResult>> GetChangesInBlockAsync(object parameters = null);
     
     /// <summary>
     /// Returns details of a specific chunk. You can run a block details query to get a valid chunk hash. (chunk).
     /// </summary>
     /// <param name="parameters">chunk_id OR block_id, shard_id</param>
     /// <returns></returns>
-    public Task<JsonRpcResponseObject<GetChunkDetailsResult>> GetChunkDetailsAsync(params object[] parameters);
+    public Task<JsonRpcResponseObject<GetChunkDetailsResult>> GetChunkDetailsAsync(object parameters = null);
 }

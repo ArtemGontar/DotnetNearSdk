@@ -22,6 +22,6 @@ public interface INetworkNearRpcClient
     /// </summary>
     /// <param name="parameters">["block hash"], [block number], or [null] for the latest block</param>
     /// <returns>A task which may return a get validation status result.</returns>
-    public Task<JsonRpcResponseObject<GetValidationStatusResult>> GetValidationStatusAsync(params object[] parameters);
+    public Task<JsonRpcResponseObject<GetValidationStatusResult>> GetValidationStatusAsync(object parameters = null);
 
 }

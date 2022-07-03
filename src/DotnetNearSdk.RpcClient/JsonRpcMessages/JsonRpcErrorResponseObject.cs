@@ -3,33 +3,9 @@ using System.Text.Json.Serialization;
 namespace DotnetNearSdk.NearRPC.JsonRpcMessages;
 
 /// <summary>
-/// Type for represent error responce from rpc
-/// </summary>
-internal class JsonRpcErrorResponseObject
-{
-    /// <summary>
-    /// Response Id
-    /// </summary>
-    [JsonPropertyName("id")]
-    public string Id { get; set; }
-    
-    /// <summary>
-    /// Json Rpc
-    /// </summary>
-    [JsonPropertyName("jsonrpc")]
-    public string JsonRpc { get; set; }
-    
-    /// <summary>
-    /// Method Result
-    /// </summary>
-    [JsonPropertyName("error")]
-    public RpcError Error { get; set; }
-}
-
-/// <summary>
 /// Type for represent rpc error info
 /// </summary>
-internal class RpcError
+public class RpcError
 {
     /// <summary>
     /// Error name

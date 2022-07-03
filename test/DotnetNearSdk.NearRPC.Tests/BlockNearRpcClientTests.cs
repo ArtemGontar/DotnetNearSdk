@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using DotnetNearSdk.NearRPC.Interfaces;
+using DotnetNearSdk.NearRPC.Types;
 using Xunit;
 
 namespace DotnetNearSdk.NearRPC.Tests;
@@ -10,13 +11,11 @@ public class BlockNearRpcClientTests
 
     public BlockNearRpcClientTests()
     {
-        _nearRpcClient = new NearRpcClient("https://rpc.testnet.near.org");
+        _nearRpcClient = new NearRpcClient(Cluster.TestNet);
     }
     
     [Fact]
-    // [InlineData("A5uBC3AXhAhYpMfVUDU48BmU86NHvW57YnJtCXvTGhEK")]
-    // [InlineData(93373159)]
-    public async Task GetBlockDetailsAsync_ShouldReturnValidResponse() //params object[] parameters
+    public async Task GetBlockDetailsAsync_ShouldReturnValidResponse() //object parameters = null
     {
         //arrange
         var parameters = new
@@ -29,6 +28,7 @@ public class BlockNearRpcClientTests
         
         //assert
         Assert.NotNull(result);
+        Assert.Null(result.Error);
         Assert.NotNull(result.Result);
         Assert.NotNull(result.Result.Header);
         Assert.NotNull(result.Result.Chunks);
@@ -36,9 +36,24 @@ public class BlockNearRpcClientTests
     }
     
     [Fact]
-    //[InlineData(93373159)]
-    //[InlineData("final")]
-    public async Task GetChangesInBlockAsync_ShouldReturnValidResponse() // params object[] parameters
+    public async Task GetBlockDetailsAsync_ShouldReturnErrorResponse()
+    {
+        //arrange
+        var parameters = new
+        {
+        };
+        
+        //act
+        var result = await _nearRpcClient.GetBlockDetailsAsync(parameters);
+        
+        //assert
+        Assert.NotNull(result);
+        Assert.Null(result.Result);
+        Assert.NotNull(result.Error);
+    }
+    
+    [Fact]
+    public async Task GetChangesInBlockAsync_ShouldReturnValidResponse() // object parameters = null
     {
         //arrange
         var parameters = new
@@ -51,14 +66,31 @@ public class BlockNearRpcClientTests
         
         //assert
         Assert.NotNull(result);
+        Assert.Null(result.Error);
         Assert.NotNull(result.Result);
         Assert.NotNull(result.Result.Changes);
         Assert.NotEmpty(result.Result.BlockHash);
     }
     
     [Fact]
-    //[InlineData("final")]
-    public async Task GetGasPriceAsync_ShouldReturnValidResponse() //params object[] parameters
+    public async Task GetChangesInBlockAsync_ShouldReturnErrorResponse()
+    {
+        //arrange
+        var parameters = new
+        {
+        };
+        
+        //act
+        var result = await _nearRpcClient.GetChangesInBlockAsync(parameters);
+        
+        //assert
+        Assert.NotNull(result);
+        Assert.Null(result.Result);
+        Assert.NotNull(result.Error);
+    }
+    
+    [Fact]
+    public async Task GetChunkDetailsAsync_ShouldReturnValidResponse()
     {
         //arrange
         var parameters = new
@@ -71,6 +103,7 @@ public class BlockNearRpcClientTests
         
         //assert
         Assert.NotNull(result);
+        Assert.Null(result.Error);
         Assert.NotNull(result.Result);
         Assert.NotNull(result.Result.Header);
         Assert.NotNull(result.Result.Receipts);
@@ -78,4 +111,22 @@ public class BlockNearRpcClientTests
         Assert.NotEmpty(result.Result.Author);
 
     }
+    
+    [Fact]
+    public async Task GetChunkDetailsAsync_ShouldReturnErrorResponse()
+    {
+        //arrange
+        var parameters = new
+        {
+        };
+        
+        //act
+        var result = await _nearRpcClient.GetChunkDetailsAsync(parameters);
+        
+        //assert
+        Assert.NotNull(result);
+        Assert.Null(result.Result);
+        Assert.NotNull(result.Error);
+    }
+
 }

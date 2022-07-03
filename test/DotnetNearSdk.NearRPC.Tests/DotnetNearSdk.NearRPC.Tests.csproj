@@ -23,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\DotnetNearSdk.NearRPC\DotnetNearSdk.NearRPC.csproj" />
+      <ProjectReference Include="..\..\src\DotnetNearSdk.RpcClient\DotnetNearSdk.RpcClient.csproj" />
     </ItemGroup>
 
 </Project>
