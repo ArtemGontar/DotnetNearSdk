@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using BlockMetrics.NearRPC.Models.Shared;
+using DotnetNearSdk.NearRPC.Models.Shared;
 
-namespace BlockMetrics.NearRPC.Models.AccessKey;
+namespace DotnetNearSdk.NearRPC.Models.AccessKey;
 
 public class ViewAccessKeyChangesResult
 {

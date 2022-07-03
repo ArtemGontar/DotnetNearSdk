@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace BlockMetrics.NearRPC.Models.AccessKey;
+namespace DotnetNearSdk.NearRPC.Models.AccessKey;
 
 public class ViewAccessKeyListResult
 {

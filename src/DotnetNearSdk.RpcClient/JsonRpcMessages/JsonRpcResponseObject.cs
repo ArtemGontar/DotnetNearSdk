@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace BlockMetrics.NearRPC.JsonRpcMessages;
+namespace DotnetNearSdk.NearRPC.JsonRpcMessages;
 
 public class JsonRpcResponseObject<T> where T : class
 {

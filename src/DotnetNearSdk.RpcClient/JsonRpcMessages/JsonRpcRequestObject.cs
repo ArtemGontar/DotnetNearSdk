@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
 
-namespace BlockMetrics.NearRPC.JsonRpcMessages;
+namespace DotnetNearSdk.NearRPC.JsonRpcMessages;
 
-public class JsonRpcRequestObject
+internal class JsonRpcRequestObject
 {
     /// <summary>
     /// Request Id

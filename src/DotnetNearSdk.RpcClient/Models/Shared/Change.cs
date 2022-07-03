@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace BlockMetrics.NearRPC.Models.Shared;
+namespace DotnetNearSdk.NearRPC.Models.Shared;
 
 public class Change<TChange>
 {

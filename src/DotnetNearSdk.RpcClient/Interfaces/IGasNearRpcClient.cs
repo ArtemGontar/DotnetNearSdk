@@ -1,7 +1,7 @@
-using BlockMetrics.NearRPC.JsonRpcMessages;
-using BlockMetrics.NearRPC.Models.Gas;
+using DotnetNearSdk.NearRPC.JsonRpcMessages;
+using DotnetNearSdk.NearRPC.Models.Gas;
 
-namespace BlockMetrics.NearRPC.Interfaces;
+namespace DotnetNearSdk.NearRPC.Interfaces;
 
 public interface IGasNearRpcClient
 {

@@ -1,4 +1,4 @@
-namespace BlockMetrics.NearRPC.Types;
+namespace DotnetNearSdk.NearRPC.Types;
 
 public enum Cluster : uint
 {

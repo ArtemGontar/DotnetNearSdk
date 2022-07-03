@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace BlockMetrics.NearRPC.Models.Contracts;
+namespace DotnetNearSdk.NearRPC.Models.Contracts;
 
 public class ViewContractStateResult
 {

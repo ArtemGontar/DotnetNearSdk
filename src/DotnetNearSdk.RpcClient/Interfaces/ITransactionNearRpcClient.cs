@@ -1,7 +1,7 @@
-using BlockMetrics.NearRPC.JsonRpcMessages;
-using BlockMetrics.NearRPC.Models.Transaction;
+using DotnetNearSdk.NearRPC.JsonRpcMessages;
+using DotnetNearSdk.NearRPC.Models.Transaction;
 
-namespace BlockMetrics.NearRPC.Interfaces;
+namespace DotnetNearSdk.NearRPC.Interfaces;
 
 public interface ITransactionNearRpcClient
 {

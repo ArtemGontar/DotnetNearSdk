@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using BlockMetrics.NearRPC.Models.Network;
+using DotnetNearSdk.NearRPC.Models.Network;
 
-namespace BlockMetrics.NearRPC.Models.Transaction;
+namespace DotnetNearSdk.NearRPC.Models.Transaction;
 
 public class SendTransactionResult
 {

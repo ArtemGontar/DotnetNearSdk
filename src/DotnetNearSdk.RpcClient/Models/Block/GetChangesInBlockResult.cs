@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace BlockMetrics.NearRPC.Models.Block;
+namespace DotnetNearSdk.NearRPC.Models.Block;
 
 public class GetChangesInBlockResult
 {

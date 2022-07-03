@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace BlockMetrics.NearRPC.Models.Gas;
+namespace DotnetNearSdk.NearRPC.Models.Gas;
 
 public class GetGasPriceResult
 {

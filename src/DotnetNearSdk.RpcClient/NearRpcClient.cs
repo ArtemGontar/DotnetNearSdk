@@ -1,16 +1,16 @@
 ﻿using System.Text;
 using System.Text.Json;
-using BlockMetrics.NearRPC.Interfaces;
-using BlockMetrics.NearRPC.JsonRpcMessages;
-using BlockMetrics.NearRPC.Models.AccessKey;
-using BlockMetrics.NearRPC.Models.Accounts;
-using BlockMetrics.NearRPC.Models.Block;
-using BlockMetrics.NearRPC.Models.Contracts;
-using BlockMetrics.NearRPC.Models.Gas;
-using BlockMetrics.NearRPC.Models.Network;
-using BlockMetrics.NearRPC.Models.Transaction;
+using DotnetNearSdk.NearRPC.Interfaces;
+using DotnetNearSdk.NearRPC.JsonRpcMessages;
+using DotnetNearSdk.NearRPC.Models.AccessKey;
+using DotnetNearSdk.NearRPC.Models.Accounts;
+using DotnetNearSdk.NearRPC.Models.Block;
+using DotnetNearSdk.NearRPC.Models.Contracts;
+using DotnetNearSdk.NearRPC.Models.Gas;
+using DotnetNearSdk.NearRPC.Models.Network;
+using DotnetNearSdk.NearRPC.Models.Transaction;
 
-namespace BlockMetrics.NearRPC;
+namespace DotnetNearSdk.NearRPC;
 
 public class NearRpcClient : INearRpcClient
 {

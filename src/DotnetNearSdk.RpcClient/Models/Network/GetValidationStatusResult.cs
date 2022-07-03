@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace BlockMetrics.NearRPC.Models.Network;
+namespace DotnetNearSdk.NearRPC.Models.Network;
 
 public class GetValidationStatusResult
 {

@@ -1,7 +1,7 @@
-using BlockMetrics.NearRPC.JsonRpcMessages;
-using BlockMetrics.NearRPC.Models.Network;
+using DotnetNearSdk.NearRPC.JsonRpcMessages;
+using DotnetNearSdk.NearRPC.Models.Network;
 
-namespace BlockMetrics.NearRPC.Interfaces;
+namespace DotnetNearSdk.NearRPC.Interfaces;
 
 public interface INetworkNearRpcClient
 {

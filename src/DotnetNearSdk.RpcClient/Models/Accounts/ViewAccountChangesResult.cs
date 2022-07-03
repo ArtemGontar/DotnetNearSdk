@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace BlockMetrics.NearRPC.Models.Accounts;
+namespace DotnetNearSdk.NearRPC.Models.Accounts;
 
 public class ViewAccountChangesResult
 {

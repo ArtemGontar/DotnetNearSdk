@@ -1,11 +1,11 @@
 using System.Text.Json.Serialization;
 
-namespace BlockMetrics.NearRPC.JsonRpcMessages;
+namespace DotnetNearSdk.NearRPC.JsonRpcMessages;
 
 /// <summary>
 /// Type for represent error responce from rpc
 /// </summary>
-public class JsonRpcErrorResponseObject
+internal class JsonRpcErrorResponseObject
 {
     /// <summary>
     /// Response Id
@@ -29,7 +29,7 @@ public class JsonRpcErrorResponseObject
 /// <summary>
 /// Type for represent rpc error info
 /// </summary>
-public class RpcError
+internal class RpcError
 {
     /// <summary>
     /// Error name

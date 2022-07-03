@@ -1,8 +1,8 @@
-using BlockMetrics.NearRPC.JsonRpcMessages;
-using BlockMetrics.NearRPC.Models.Accounts;
-using BlockMetrics.NearRPC.Models.Contracts;
+using DotnetNearSdk.NearRPC.JsonRpcMessages;
+using DotnetNearSdk.NearRPC.Models.Accounts;
+using DotnetNearSdk.NearRPC.Models.Contracts;
 
-namespace BlockMetrics.NearRPC.Interfaces;
+namespace DotnetNearSdk.NearRPC.Interfaces;
 
 public interface IAccountsContractsRpcClient
 {
