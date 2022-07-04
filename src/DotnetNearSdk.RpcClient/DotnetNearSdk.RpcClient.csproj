@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
         <RootNamespace>DotnetNearSdk.NearRPC</RootNamespace>
         <PackageId>DotnetNearSdk.NearRPC</PackageId>
-        <Version>0.0.1</Version>
+        <Version>0.0.2</Version>
         <Authors>Artsiom Hontar</Authors>
     </PropertyGroup>
 
